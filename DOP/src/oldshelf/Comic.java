@@ -10,6 +10,7 @@ public class Comic extends Book {
 
 	// TODO Correct the error
 	public Comic(String title, int age) {
+		super(title);
 		this.Title = title;
 		this.ageOfMainCharacter = age;
 	}
@@ -17,6 +18,10 @@ public class Comic extends Book {
 	// TODO : create a getter if required.
 	public String getTitle() {
 		return this.Title;
+	}
+
+	public int getAge() {
+		return this.ageOfMainCharacter;
 	}
 	// TODO: Create a setter if required
 
